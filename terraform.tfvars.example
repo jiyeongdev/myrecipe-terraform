@@ -1,0 +1,10 @@
+asg_name     = "Auto Scaling Group Name"
+ecs_cluster  = "ECS Cluster Name"
+ecs_service  = "ECS Service Name"
+scale_up_min_size         = 1
+scale_up_desired_capacity = 1
+scale_up_max_size         = 2
+scale_up_ecs_count        = 1
+scale_down_cron           = "cron(0 17 * * ? *)" # KST 2AM  (기본: KST 2시 = UTC 17시)
+scale_up_cron             = "cron(0 21 * * ? *)" # KST 6AM (기본: KST 6시 = UTC 21시)
+internal_alb_dns_name     = "Internal ALB DNS name (e.g. internal-my-alb-xxxx.ap-northeast-1.elb.amazonaws.com)"
